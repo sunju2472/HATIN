@@ -1,0 +1,19 @@
+#spring.application.name=hatin
+
+spring:
+  application:
+    name: hatin
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hatin?autoReconnect=true&useUnicode=true&serverTimezone=Asia/Seoul
+    username: project1
+    password: 1234
+
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
